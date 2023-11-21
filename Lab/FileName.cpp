@@ -20,7 +20,6 @@ public:
         size_type;
 
     Array(const size_type n);
-    Array(const Array& array);
     Array(iterator first, iterator last);
 
     ~Array()
@@ -28,7 +27,6 @@ public:
         delete[]ptr;
     }
 
-    Array& operator=(const Array&);
 
     iterator begin() { return ptr; }
     const_iterator begin() const { return ptr; }
